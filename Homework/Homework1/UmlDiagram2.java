@@ -8,7 +8,7 @@ class Animal {
     }
 
     public void mate() {
-        System.out.println("This animal is mating.");
+        
     }
 }
 
@@ -16,11 +16,11 @@ class Duck extends Animal {
     public String beakColor = "yellow";
 
     public void swim() {
-        System.out.println("Duck is swimming");
+        
     }
 
     public void quack() {
-        System.out.println("Duck is quacking");
+        
     }
 }
 
@@ -35,7 +35,7 @@ class Fish extends Animal {
     }
 
     public void swim() {
-        System.out.println("Fish is swimming.");
+        
     }
 
     //getters
@@ -57,7 +57,7 @@ class Zebra extends Animal {
     }
 
     public void run() {
-        System.out.println("Zebra is running");
+        
     }
 }
 
@@ -65,17 +65,12 @@ public class UmlDiagram2 {
     public static void main(String[] args) {
         Duck duck = new Duck();
         duck.age = 2;
-        duck.gender = "Female";
-        System.out.println("Duck beak color: " + duck.beakColor);
-        duck.quack();
         duck.swim();
         duck.mate();
 
         Fish fish = new Fish(3, true);
         fish.age = 1;
         fish.gender = "Male";
-        System.out.println("Fish size: " + fish.getSizeInFt() + " ft");
-        fish.swim();
         fish.mate();
 
         Zebra zebra = new Zebra(true);
@@ -83,6 +78,6 @@ public class UmlDiagram2 {
         zebra.gender = "Male";
         System.out.println("Is Zebra wild? " + zebra.is_wild);
         zebra.run();
-        System.out.println("Is Zebra a mammal? " + zebra.isMammal());
+
     }
 }
